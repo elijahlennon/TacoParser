@@ -5,7 +5,7 @@ using GeoCoordinatePortable;
 
 namespace LoggingKata
 {
-    class Program
+    class Program 
     {
         static readonly ILog logger = new TacoLogger();
         const string csvPath = "TacoBell-US-AL.csv";
@@ -52,7 +52,7 @@ namespace LoggingKata
                 corA.Latitude = locA.Location.Latitude;
                 corA.Longitude = locA.Location.Longitude;
 
-                for(var j = 0; j < locations.Length; i++)
+                for(var j = 0; j < locations.Length; j++)
                 {
                     var locB = locations[j];
                     var corB = new GeoCoordinate() { Latitude = locB.Location.Latitude, Longitude = locB.Location.Longitude };
